@@ -1,3 +1,2 @@
-SELECT id, name, email, password
-FROM users
-WHERE email = 'tristanjacobs@gmail.com';
+SELECT AVG(reservations.start_date - end_date) AS average_duration
+FROM reservations;
